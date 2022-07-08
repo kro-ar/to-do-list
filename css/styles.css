@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --blue:#62acd3 ;
+    --dark-blue: #8398b5 ;
+    --brown:#343534 ;
+    --light-brown:#b5b5ac ;
+    --white:#ffffff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600&display=swap');
+body{
+    background-image: url(../assest/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Edu QLD Beginner', cursive;
+    height: 100vh;
+}
+.container{
+    max-width: 80%;
+    align-items: center;
+    width: 400px;
+    height: 100vh;
+    margin: 0 auto;
+}
+/* perfil */
+.perfil h1{
+    color: var(--white);
+}
+.perfil span{
+    color: var(--dark-blue);
+    letter-spacing: 1px;
+}
+#fecha{
+    color: var(--light-brown);
+    padding: 50px 5px 0;
+}
+/* agregar tarea */
+.agregar-tarea{
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    margin:20px 0px ;
+
+}
+.agregar-tarea input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+}
+.agregar-tarea i{
+    font-size: 30px;
+    color: var(--dark-blue);
+}
+.agregar-tarea i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.agregar-tarea input{
+    font-size: 1.1rem;
+    text-align: center;
+}
+.agregar-tarea input::placeholder{
+    font-size: 1.1rem;
+    color: var(--dark-blue);
+}
+/*section tarea*/
+.section-tarea h3{
+    color: var(--brown);
+    margin-bottom: 20px;
+
+}
+.section-tarea li{
+
+    display: flex;
+    background-color: var(--light-brown);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px 0px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+}
+.section-tarea i{
+    font-size: 15px;
+}
+.section-tarea i:hover{
+    color: var(--blue);
+}
+.section-tarea>ul p{
+    font-size: 1.2rem;
+
+}
+.line-through{
+    text-decoration: line-through;
+    color: var(--blue);
+}
