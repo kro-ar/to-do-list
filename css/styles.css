@@ -7,16 +7,18 @@
 :root{
     --blue:#62acd3 ;
     --dark-blue: #8398b5 ;
-    --brown:#343534 ;
-    --light-brown:#b5b5ac ;
+    --green:#343534 ;
+    --light-green:#4EAD4C;
+    --light-yellow:#b5b5ac ;
     --white:#ffffff;
+    --dark-red:#464B69;
 }
-@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 body{
-    background-image: url(../assest/fondo2.jpg);
+    background-image: url(../assest/fondo2.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Edu QLD Beginner', cursive;
+    font-family: 'Quicksand', sans-serif;
     height: 100vh;
 }
 .container{
@@ -28,14 +30,14 @@ body{
 }
 /* perfil */
 .perfil h1{
-    color: var(--white);
+    color: var(--dark-red);
 }
 .perfil span{
     color: var(--dark-blue);
     letter-spacing: 1px;
 }
 #fecha{
-    color: var(--light-brown);
+    color: var(--light-yellow);
     padding: 50px 5px 0;
 }
 /* agregar tarea */
@@ -48,6 +50,7 @@ body{
     padding: 5px;
     gap: 5px;
     margin:20px 0px ;
+    border:1px solid #BA9488;
 
 }
 .agregar-tarea input{
@@ -56,6 +59,7 @@ body{
     border-radius: 8px;
     border: none;
     background-color: var(--white);
+    
 }
 .agregar-tarea i{
     font-size: 30px;
@@ -68,21 +72,23 @@ body{
 .agregar-tarea input{
     font-size: 1.1rem;
     text-align: center;
+    
 }
 .agregar-tarea input::placeholder{
     font-size: 1.1rem;
     color: var(--dark-blue);
+    font-family: 'Quicksand',sans-serif;
 }
 /*section tarea*/
 .section-tarea h3{
-    color: var(--brown);
+    color: var(--green);
     margin-bottom: 20px;
 
 }
 .section-tarea li{
 
     display: flex;
-    background-color: var(--light-brown);
+    background-color: var(--light-yellow);
     border-radius: 15px;
     padding: 5px;
     margin: 5px 0px;
@@ -91,10 +97,12 @@ body{
     color: var(--white);
 }
 .section-tarea i{
-    font-size: 15px;
+    font-size: 20px;
 }
 .section-tarea i:hover{
-    color: var(--blue);
+    color: var(--light-green);
+    transform: scale(1.1);
+    cursor: pointer;
 }
 .section-tarea>ul p{
     font-size: 1.2rem;
@@ -102,5 +110,5 @@ body{
 }
 .line-through{
     text-decoration: line-through;
-    color: var(--blue);
+    color: var(--dark-blue);
 }
