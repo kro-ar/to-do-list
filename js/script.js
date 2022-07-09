@@ -3,6 +3,7 @@ const lista = document.querySelector('#lista');
 const input = document.querySelector('#input');
 const botonEnter = document.querySelector('#enter');
 const check ='fa-check-circle'
+
 const uncheck ='fa-circle'
 const lineThrough = 'line-through'
 let id
@@ -40,6 +41,7 @@ function agregarTarea(tarea,id,realizado,eliminado){
 function tareaRealizada(element){
     element.classList.toggle(check)
     element.classList.toggle(uncheck)
+    
     element.parentNode.querySelector('.text').classList.toggle(lineThrough)
     LIST[element.id].realizado = LIST[element.id].realizado ?false :true
 }
@@ -87,6 +89,7 @@ lista.addEventListener('click', function (event){
     const elementData = element.attributes.data.value
     if(elementData==='realizado'){
         tareaRealizada(element)
+        
     }
     else if (elementData==='eliminado'){
         tareaEliminada(element)

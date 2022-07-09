@@ -12,10 +12,12 @@
     --light-yellow:#b5b5ac ;
     --white:#ffffff;
     --dark-red:#464B69;
+    --orange:#e7522e;
+    --light-orange:#ffbb6e;
 }
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 body{
-    background-image: url(../assest/fondo2.webp);
+    background-image: url(../assest/fondo3.webp);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Quicksand', sans-serif;
@@ -98,6 +100,7 @@ body{
 }
 .section-tarea i{
     font-size: 20px;
+    color:#db3210;
 }
 .section-tarea i:hover{
     color: var(--light-green);
@@ -110,5 +113,19 @@ body{
 }
 .line-through{
     text-decoration: line-through;
-    color: var(--dark-blue);
+    color: var(--light-green);
+}
+
+
+@media only screen and (max-width:800px) {
+
+    .perfil h1{
+        color: var(--orange);
+        -webkit-text-stroke: .5px black;
+    }
+    .perfil span{
+        color: var(--light-orange);
+        -webkit-text-stroke: .5px black;
+        letter-spacing: 1px;
+    }
 }
